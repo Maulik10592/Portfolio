@@ -1,0 +1,17 @@
+.AboutContainer h2 {
+    color: var(--heading-color);
+    font-family: var(--heading-family);
+    font-size: 4rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    cursor: context-menu;
+}
+#taglist ul li a {font-size: 20px;}
+.tagcloud {
+    font-family: var(--heading-family);
+    font-size: 20px;
+}
+.tagcloud--item:hover {
+    color: var(--hover-color);
+}

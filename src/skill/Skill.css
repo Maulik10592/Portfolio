@@ -1,0 +1,129 @@
+.SkillContainer h2 {
+    color: var(--heading-color);
+    font-family: var(--heading-family);
+    font-size: 4rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    cursor: context-menu;
+}
+.SkillContainer a, .SkillContainer  a:hover{
+    color: var(--heading-color);
+    font-family: var(--heading-family);
+    text-decoration: none;
+    outline: none;    
+}
+.SkillContainer  a:visited, .SkillContainer  a:focus{
+    outline: none;
+    text-decoration: none;
+}
+
+.linkHover {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.linkHover::before,
+.linkHover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+.linkHover::before {
+    background-color: var(--day-color);
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.linkHover::after {
+    content: attr(data-replace);
+    height: 100%;
+    top: 0;
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+    color: var(--day-color);
+}
+.linkHover:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+}
+.linkHover:hover::after {
+    transform: translate3d(0, 0, 0);
+}
+.linkHover span {
+    display: inline-block;
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.linkHover:hover span {
+    transform: translate3d(-200%, 0, 0);
+}
+
+@keyframes load{
+    from {
+      width: 0%
+    }
+}
+@-webkit-keyframes load{
+    from {
+      width: 0%
+    }
+}
+@-moz-keyframes load{
+    from {
+      width: 0%
+    }
+}
+@-o-keyframes load{
+    from {
+      width: 0%
+    }
+}
+.skillBox{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+}
+.bar{
+    width: 100%;
+    background-color: var(--day-color);
+    padding: 3px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    color: var(--day-color);
+    font-family: var(--heading-family);
+    font-weight: bold;
+    text-shadow: var(--text-shadow);
+}
+.bar::before{
+    content:  attr(data-skill);
+    background-color: var(--heading-color);
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+}
+.bar.basic::before{
+    width: calc(50% - 10px);
+}
+.bar.intermediate::before{
+    width: calc(70% - 10px);
+}
+.bar.advanced::before{
+    width: calc(90% - 10px);
+}
+.bar.expert::before{
+    width: calc(100% - 10px);
+}  

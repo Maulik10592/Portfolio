@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'OCR-A-Regular';
+    src: url('./fonts/OCR-A-Regular.ttf') format('truetype');
+}
+:root {
+    --day-bg-color: #001e26;
+    --day-color: #ffffff;
+    --night-bg-color: #ffffff;
+    --night-color: #001e26;
+    --heading-color: #3ab773;
+    --hover-color: #71c59c;
+    --body-font: 16px;
+    --body-font-family: 'Oswald', sans-serif;
+    --heading-family: 'Cabin Sketch', cursive;
+    --matrix-font-family: 'OCR-A-Regular','Oswald', sans-serif;
+    --box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    --white-shadow: 0 5px 10px rgba(255,255,255,0.5);
+    --green-shadow: 0px 0px 10px rgb(58, 183, 115, 1);
+    --text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+body, .Portfolio {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: var(--day-bg-color);
+    color: var(--day-color);
+    font-size: var(--body-font);
+    font-family: var(--matrix-font-family);
+    line-height: 1.5;
+}
+.Portfolio{
+    display: flex;
+}
+.Outerbox {
+    height: 100vh;
+    width: calc(100vw - 60px);
+    position: relative;
+    margin: 0;    
+    margin-left: auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+a, a:hover{
+    color: var(--heading-color);
+    text-decoration: none;   
+    outline: none; 
+}
+a:visited, a:focus{
+    outline: none;
+    text-decoration: none;
+}
+#glow {
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    -webkit-text-shadow: 0 0 0 transparent, 0 0 0 transparent;
+    -moz-text-shadow: 0 0 0 transparent, 0 0 0 transparent;
+    -ms-text-shadow: 0 0 0 transparent, 0 0 0 transparent;
+    -o-text-shadow: 0 0 0 transparent, 0 0 0 transparent;
+    text-shadow: 0 0 0 transparent, 0 0 0 transparent;
+    overflow: visible;  
+}
+#glow:hover {
+    color: var(--day-color);
+    -webkit-text-shadow: 0 0 10px var(--heading-color), 0 0 50px var(--hover-color);
+    -moz-text-shadow: 0 0 10px var(--heading-color), 0 0 50px var(--hover-color);
+    -ms-text-shadow: 0 0 10px var(--heading-color), 0 0 50px var(--hover-color);
+    -o-text-shadow: 0 0 10px var(--heading-color), 0 0 50px var(--hover-color);
+    text-shadow: 0 0 10px var(--heading-color), 0 0 50px var(--hover-color);
+}
+
+/* Responsive css start here */
+@media only screen and (max-width: 1200px) {
+    .homeContainer h1, .AboutContainer h2, .SkillContainer h2, .WorkContainer h2, .ContactContainer h2{
+        font-size: 3rem !important;
+    }
+    .homeContainer h1 span {
+        font-size: 4rem !important;
+    }
+    .homeContainer h2, .homeContainer h2 span{
+        font-size: 2.5rem !important;
+    }
+    .Outerbox {
+        padding: 3%;
+    }
+    .mLogo {
+        width: 100% !important;
+    }
+    .googleMap, #gmap_canvas {
+        margin: 50px 0;
+    }
+}
+@media only screen and (max-width: 991px) {    
+    .mLogo {
+        width: 60% !important;
+        padding: 50px 0 0 0;
+    }
+}
+@media only screen and (max-width: 767px) {
+    :root {
+        --body-font: 14px !important;
+    }
+    .Outerbox {
+        height: 100%;
+        width: calc(100vw - 45px);
+    }
+    .Outerbox.homeOuterBox{        
+        width: calc(100vw - 45px);
+    }
+    .navbar-expand-lg{width: 45px !important;}
+    .navigatorLink, .socialLinks{width: 35px !important;}
+    .homeContainer h1, .AboutContainer h2, .SkillContainer h2, .WorkContainer h2, .ContactContainer h2{
+        font-size: 3rem !important;
+    }
+    .homeContainer h1 span {
+        font-size: 4rem !important;
+    }
+    .homeContainer h2, .homeContainer h2 span{
+        font-size: 2.5rem !important;
+    }
+    .mLogo {
+        width: 60% !important;
+        padding: 50px 0;
+    }
+    .googleMap, #gmap_canvas {
+        margin: 50px 0 !important;
+        height: 400px;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .Outerbox.homeOuterBox{        
+        height: 100vh;
+    }
+    .btn{
+        padding: 10px !important;
+        max-width: 150px !important;
+        height: 40px !important;
+        line-height: 1 !important;
+        letter-spacing: 2px !important;
+    }
+    .AboutContainer h2, .SkillContainer h2, .WorkContainer h2, .ContactContainer h2{
+        font-size: 2.5rem !important;
+        line-height: 1 !important;        
+        margin-bottom: 15px !important;
+    }
+    .homeContainer h1{
+        font-size: 2rem !important;
+    }
+    .homeContainer h1 span {
+        font-size: 2.5rem !important;
+        line-height: 1 !important;
+    }
+    .homeContainer h2, .homeContainer h2 span{
+        font-size: 1.75rem !important;
+        line-height: 1.2 !important;
+        margin-top: 10px !important;  
+    }
+    .homeContainer  .d-flex {
+        flex-direction: column;
+    }
+    .mLogo {
+        width: 80% !important;
+    }
+    .skillBox{margin-top: 10px !important;}
+    
+    .googleMap, #gmap_canvas {
+        margin: 50px 0 !important;
+        height: 300px;
+    }
+}
