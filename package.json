@@ -1,5 +1,6 @@
 {
   "name": "developermv",
+  "homepage": "https://myusername.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,6 +17,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@types/react-router-dom": "^5.3.3",
     "bootstrap": "^5.2.3",
+    "gh-pages": "^5.0.0",
     "google-map-react": "^2.2.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.3",
@@ -30,6 +32,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
