@@ -5,7 +5,7 @@ import Slider from './Slider';
 
 function Work() {
   return (
-    <div className='Outerbox'>
+    <div className='Outerbox WorkSite'>
       <Container className='WorkContainer'>
         <Row>
           <Col className="animated zoomIn">          

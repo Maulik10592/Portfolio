@@ -56,8 +56,8 @@ const AboutMySkills = ({ ...rest }) => {
       <div className='container'>
         <canvas
           id='tagcanvas'
-          width='500'
-          height='500'
+          width='450'
+          height='450'
           style={{
             maxWidth: '1000px',
             width: '100%',

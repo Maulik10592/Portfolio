@@ -132,11 +132,12 @@ a:visited, a:focus{
     }
     .googleMap, #gmap_canvas {
         margin: 50px 0 !important;
-        height: 400px;
+        height: 400px !important;
     }
+    .skillBox{margin: 0 0 60px 0 !important}
 }
 @media only screen and (max-width: 575px) {
-    .Outerbox.homeOuterBox{        
+    .Outerbox.homeOuterBox, .Outerbox.WorkSite{        
         height: 100vh;
     }
     .btn{
@@ -146,20 +147,23 @@ a:visited, a:focus{
         line-height: 1 !important;
         letter-spacing: 2px !important;
     }
-    .AboutContainer h2, .SkillContainer h2, .WorkContainer h2, .ContactContainer h2{
+    .AboutContainer h2, .SkillContainer h2, .ContactContainer h2{
         font-size: 2.5rem !important;
         line-height: 1 !important;        
         margin-bottom: 15px !important;
     }
+    .WorkContainer h2{
+        margin-bottom: 40px !important;
+    }
     .homeContainer h1{
-        font-size: 2rem !important;
+        font-size: 1.75rem !important;
     }
     .homeContainer h1 span {
         font-size: 2.5rem !important;
         line-height: 1 !important;
     }
     .homeContainer h2, .homeContainer h2 span{
-        font-size: 1.75rem !important;
+        font-size: 1.5rem !important;
         line-height: 1.2 !important;
         margin-top: 10px !important;  
     }
@@ -169,10 +173,20 @@ a:visited, a:focus{
     .mLogo {
         width: 80% !important;
     }
-    .skillBox{margin-top: 10px !important;}
-    
     .googleMap, #gmap_canvas {
         margin: 50px 0 !important;
-        height: 300px;
+        height: 300px !important;
+    }
+    .skillBox{margin: 50px 0 !important;}
+    .slides .nextSlideBtn, .slides>.prevSlideBtn{
+        font-size: 1.5rem!important;
+        height: 2rem!important;
+        width: 2rem!important;   
+    }
+    .slides>.prevSlideBtn {
+        left: -20px!important;
+    }
+    .slides>.nextSlideBtn {
+        right: -20px!important;
     }
 }
