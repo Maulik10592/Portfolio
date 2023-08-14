@@ -113,10 +113,16 @@ a:visited, a:focus{
     .Outerbox {
         height: 100%;
         width: calc(100vw - 45px);
-        padding: 0 !important;
+        padding: 20px 0 !important;
     }
     .Outerbox.homeOuterBox{
         width: calc(100vw - 45px);
+    }
+    .WorkContainer h2{
+        margin-top: 0 !important;
+    }
+    .Outerbox.WorkSite{
+        padding-bottom: 40px !important;
     }
     .navbar-expand-lg{width: 45px !important;}
     .navigatorLink, .socialLinks{width: 35px !important;}
