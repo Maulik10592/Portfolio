@@ -119,8 +119,9 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background: transparent;
+    background: var(--day-bg-color);
     border: none;
+    border-radius: 5px;
     color: var(--day-color);
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
     position: absolute;
@@ -142,8 +143,8 @@
     outline: none;
 }
 .slides > .prevSlideBtn {
-    left: -15%;
+    left: -35px;
 }
 .slides > .nextSlideBtn {
-    right: -15%;
+    right: -35px;
 }

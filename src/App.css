@@ -89,13 +89,15 @@ a:visited, a:focus{
         font-size: 2.5rem !important;
     }
     .Outerbox {
-        padding: 3%;
+        padding: 20px;
     }
     .mLogo {
         width: 100% !important;
     }
+    .skillBox{margin-top: 0;}
+    .contactForm {margin-bottom: 30px;}
     .googleMap, #gmap_canvas {
-        margin: 50px 0;
+        height: 350px !important;
     }
 }
 @media only screen and (max-width: 991px) {    
@@ -139,6 +141,7 @@ a:visited, a:focus{
 @media only screen and (max-width: 575px) {
     .Outerbox.homeOuterBox, .Outerbox.WorkSite{        
         height: 100vh;
+        padding: 0 !important;
     }
     .btn{
         padding: 10px !important;
@@ -177,16 +180,16 @@ a:visited, a:focus{
         margin: 50px 0 !important;
         height: 300px !important;
     }
-    .skillBox{margin: 50px 0 !important;}
+    .skillBox{margin: 0 0 40px 0 !important;}
     .slides .nextSlideBtn, .slides>.prevSlideBtn{
-        font-size: 1.5rem!important;
+        font-size: 1rem!important;
         height: 2rem!important;
         width: 2rem!important;   
     }
     .slides>.prevSlideBtn {
-        left: -20px!important;
+        left: -15px!important;
     }
     .slides>.nextSlideBtn {
-        right: -20px!important;
+        right: -15px!important;
     }
 }
