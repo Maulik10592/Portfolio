@@ -3,7 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'; 
 import Header from './header/Header';
-import Footer from './footer/Footer';
 import Home from "./home/Home";
 import About from './about/About';
 import Skill from './skill/Skill';
@@ -37,7 +36,6 @@ function App() {
             <Route exact path="/about" element={<About />} /> 
             <Route exact path="/" element={<Home />} />
           </Routes>
-          <Footer />
         </>
       }
     </div>

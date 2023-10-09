@@ -1,5 +1,5 @@
 .MatrixCanvas {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
@@ -21,7 +21,7 @@
 .homeContainer h2, .homeContainer h2 span {
   color: var(--heading-color);
   font-size: 3rem;
-  line-height: 1.5;
+  line-height: 1.25;
   margin: 0;
   padding: 0;
 }
@@ -80,4 +80,28 @@
   100% {
     transform: translateY(0);
   }
+}
+.socialLinks {
+  position: relative;
+  width: 200px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+.socialLinks a {
+  font-size: 1.5rem;
+  line-height: 1;
+  margin: 0;
+  padding: 10px;
+  width: auto;
+  height: auto;
+}
+.socialLinks a.active, .socialLinks .show>a {
+    color: var(--day-color) !important;
+}
+.socialLinks a.active:hover, .socialLinks .show>a:hover {
+    color: var(--hover-color) !important;
 }

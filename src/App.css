@@ -36,7 +36,7 @@ body, .Portfolio {
 }
 .Outerbox {
     height: 100vh;
-    width: calc(100vw - 60px);
+    width: 100vw;
     position: relative;
     margin: 0;    
     margin-left: auto;
@@ -105,6 +105,9 @@ a:visited, a:focus{
         width: 60% !important;
         padding: 50px 0 0 0;
     }
+    .Outerbox {
+        height: 100%;
+    }
 }
 @media only screen and (max-width: 767px) {
     :root {
@@ -112,11 +115,7 @@ a:visited, a:focus{
     }
     .Outerbox {
         height: 100%;
-        width: calc(100vw - 45px);
         padding: 20px 0 !important;
-    }
-    .Outerbox.homeOuterBox{
-        width: calc(100vw - 45px);
     }
     .WorkContainer h2{
         margin-top: 0 !important;
@@ -124,8 +123,6 @@ a:visited, a:focus{
     .Outerbox.WorkSite{
         padding-bottom: 40px !important;
     }
-    .navbar-expand-lg{width: 45px !important;}
-    .navigatorLink, .socialLinks{width: 35px !important;}
     .homeContainer h1, .AboutContainer h2, .SkillContainer h2, .WorkContainer h2, .ContactContainer h2{
         font-size: 3rem !important;
     }
@@ -140,7 +137,7 @@ a:visited, a:focus{
         padding: 50px 0;
     }
     .googleMap, #gmap_canvas {
-        margin: 50px 0 !important;
+        margin: 0 0 50px 0 !important;
         height: 400px !important;
     }
     .skillBox{margin: 0 0 60px 0 !important}
@@ -165,16 +162,22 @@ a:visited, a:focus{
         margin-bottom: 40px !important;
     }
     .homeContainer h1{
-        font-size: 1.75rem !important;
+        font-size: 2rem !important;
     }
     .homeContainer h1 span {
-        font-size: 2.5rem !important;
+        font-size: 2.75rem !important;
         line-height: 1 !important;
     }
     .homeContainer h2, .homeContainer h2 span{
-        font-size: 1.5rem !important;
+        font-size: 1.75rem !important;
         line-height: 1.2 !important;
         margin-top: 10px !important;
+    }
+    .socialLinks {   
+        width: 150px !important;
+    }
+    .socialLinks a {
+        font-size: 1.25rem !important;
     }
     .homeContainer  .d-flex {
         flex-direction: column;
@@ -183,7 +186,7 @@ a:visited, a:focus{
         width: 80% !important;
     }
     .googleMap, #gmap_canvas {
-        margin: 50px 0 !important;
+        margin: 0 0 50px 0 !important;
         height: 300px !important;
     }
     .skillBox{margin: 0 0 40px 0 !important;}
