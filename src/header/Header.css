@@ -49,8 +49,10 @@
     position: relative;
     color: var(--day-color);
     font-size: 0.85rem;
-    text-align: center;
-    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
     margin: 0 5px;
     transition: .5s;
     background: transparent;

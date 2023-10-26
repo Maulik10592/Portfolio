@@ -11,6 +11,8 @@ import Contact from './contact/Contact';
 import NoMatch from './nomatch/NoMatch';
 import Loader from './Loader';
 import { useState, useEffect } from 'react';
+//import DarkMode from './DarkMode';
+import ColorSwitcher from './colorswitcher/ColorSwitcher';
 
 function App() {
 
@@ -28,6 +30,8 @@ function App() {
         loading? <Loader/> : 
         <>
           <Header />
+          {/* <DarkMode /> */}
+          <ColorSwitcher />
           <Routes>
             <Route path="*" element={<NoMatch />} />
             <Route exact path="/contact" element={<Contact />} />

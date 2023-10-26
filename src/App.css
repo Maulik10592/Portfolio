@@ -5,8 +5,6 @@
 :root {
     --day-bg-color: #001e26;
     --day-color: #ffffff;
-    --night-bg-color: #ffffff;
-    --night-color: #001e26;
     --heading-color: #3ab773;
     --hover-color: #71c59c;
     --body-font: 16px;
@@ -15,10 +13,9 @@
     --matrix-font-family: 'OCR-A-Regular','Oswald', sans-serif;
     --box-shadow: 0 5px 10px rgba(0,0,0,0.5);
     --white-shadow: 0 5px 10px rgba(255,255,255,0.5);
-    --green-shadow: 0px 0px 10px rgb(58, 183, 115, 1);
     --text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    --green-shadow: 0px 0px 10px rgb(58, 183, 115, 1);
 }
-
 body, .Portfolio {
     position: relative;
     width: 100%;
@@ -202,3 +199,119 @@ a:visited, a:focus{
         right: -15px!important;
     }
 }
+
+
+/* dark and lighe mode css start */
+/* .dark-theme{
+    --day-bg-color: #001e26;
+    --day-color: #ffffff;
+    --night-bg-color: #ffffff;
+    --night-color: #001e26;
+}
+.light-theme{
+    --day-bg-color: #ffffff;
+    --day-color: #001e26;
+    --night-bg-color: #001e26;
+    --night-color: #ffffff;
+}
+.toggleMode {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 111;
+}
+.toggleMode input[type="checkbox"] {
+    position: relative;
+    width: 50px;
+    height: 25px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: red;
+    outline: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    box-shadow: inset 0 0 5px rgb(0 0 0 / 50%);
+  }
+  .toggleMode input[type="checkbox"]::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    transition: 0.5s;
+  }
+  .toggleMode input[type="checkbox"]:checked::before {
+    transform: translateX(100%);
+    background: #fff;
+  }
+  .toggleMode input[type="checkbox"]:checked {
+    background: #00ed64;
+  } */
+  /* dark and lighe mode css end */
+
+  
+/* color switcher mode css start */
+.color-switcher {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translate(100%, -50%);
+    z-index: 111;
+    width: 10rem;
+    background-color: var(--day-color);
+    padding: 1rem;
+    transition: all 0.5 ease-in-out;
+}
+.color-switcher--open{
+    transform: translate(0%, -50%);
+}
+.color-switcher p{
+    color: var(--heading-color);
+}
+.color-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.color-item{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: var(--heading-color);
+    outline: 0;
+    cursor: pointer;
+}
+.color-btn{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 1.25rem;
+    transform: translate(-100%, -50%);
+    z-index: 111;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--day-color);
+    color: var(--heading-color);
+    border: none;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+.color-btn svg{
+    animation: rotate-animation 10s infinite linear;
+}
+@keyframes rotate-animation {
+	0% {
+		transform: rotate(0deg);
+  }
+  50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+/* color switcher mode css end */

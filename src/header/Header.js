@@ -5,7 +5,6 @@ import { Nav, Navbar } from 'react-bootstrap';
 import { Link, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse, faUser, faWandMagicSparkles, faLaptopCode, faEnvelopesBulk } from '@fortawesome/free-solid-svg-icons';
-
 import Audio from './Audio';
 
 function Header() {
