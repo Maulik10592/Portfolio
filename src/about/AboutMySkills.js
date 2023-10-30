@@ -24,7 +24,7 @@ const mySkills = [
 
 const AboutMySkills = ({ ...rest }) => {
   useEffect(() => {
-		console.log('Loading TagCanvas...');
+		//console.log('Loading TagCanvas...');
 		const TagCanvas = window.TagCanvas;
 		const tagCanvasOptions = {
       textColour: '#3ab773',
