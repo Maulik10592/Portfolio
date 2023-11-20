@@ -73,6 +73,9 @@ a:visited, a:focus{
     -o-text-shadow: 0 0 10px var(--heading-color), 0 0 50px var(--hover-color);
     text-shadow: 0 0 10px var(--heading-color), 0 0 50px var(--hover-color);
 }
+p{
+    text-align: justify;
+}
 
 /* Responsive css start here */
 @media only screen and (max-width: 1200px) {
@@ -264,6 +267,7 @@ a:visited, a:focus{
     background-color: var(--day-color);
     padding: 1rem;
     transition: all 0.5 ease-in-out;
+    box-shadow: 0 0 5px var(--heading-color);
 }
 .color-switcher--open{
     transform: translate(0%, -50%);

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Skill.css';
+import MySkills from './MySkills';
 import {Container, Row, Col} from 'react-bootstrap';
 
 function Skill() {
@@ -15,6 +16,10 @@ function Skill() {
             <p>Visit my <a className='linkHover' target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/maulik-vaghela-b75549107/" data-replace="LinkedIn"><span>LinkedIn</span></a> profile for more details or just <a className='linkHover' href="/contact" data-replace="Contact"><span>Contact</span></a> me.</p>  
           </Col>
           <Col md={12} lg={6} className="animated fadeInRight"> 
+            <MySkills />
+          </Col>
+
+          {/* <Col md={12} lg={6} className="animated fadeInRight"> 
               <div className="skillBox">
                 <div className="bar expert" data-skill="HTML5/CSS3"></div>
                 <div className="bar intermediate" data-skill="Jquery/JavaScript"></div>
@@ -25,7 +30,8 @@ function Skill() {
                 <div className="bar intermediate" data-skill="Photoshop/Illustration"></div>
                 <div className="bar basic" data-skill="XD/Figma"></div>
               </div>
-          </Col>
+          </Col> */}
+          
         </Row>
       </Container>
     </div>

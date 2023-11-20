@@ -10,7 +10,7 @@ function Work() {
         <Row>
           <Col className="animated zoomIn">          
             <h2 id='glow'>My Work</h2>
-            <Slider id="Slider" loading="lazy"></Slider>
+            <Slider id="Slider"></Slider>
           </Col>
         </Row>
       </Container>

@@ -7,11 +7,36 @@
     padding: 0;
     cursor: context-menu;
 }
-#taglist ul li a {font-size: 20px;}
-.tagcloud {
-    font-family: var(--heading-family);
-    font-size: 20px;
+.aboutMe{
+    position: relative;
+    padding: 0;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: morph 8s ease-in-out infinite;
+    background-image: url(../../public/assets/images/Maulik_web.jpeg);
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid var(--hover-color);
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    height: 25rem;
+    width: 22rem;
+    transition: all 1s ease-in-out;
 }
-.tagcloud--item:hover {
-    color: var(--hover-color);
+.aboutMe:hover {
+    box-shadow: 6px 15px 50px var(--hover-color), -4px -10px 40px var(--heading-color);
+}
+@keyframes morph {
+    0% {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50% {
+      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+    100% {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
 }

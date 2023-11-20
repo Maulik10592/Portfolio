@@ -22,7 +22,7 @@ const mySkills = [
   { href: '#', title: 'Figma' },
 ];
 
-const AboutMySkills = ({ ...rest }) => {
+const MySkills = ({ ...rest }) => {
   useEffect(() => {
 		//console.log('Loading TagCanvas...');
 		const TagCanvas = window.TagCanvas;
@@ -53,11 +53,11 @@ const AboutMySkills = ({ ...rest }) => {
   }, []);
 
   return (
-      <div className='container'>
+      <div className='tagCanvasContainer'>
         <canvas
           id='tagcanvas'
           width='450'
-          height='450'
+          height='350'
           style={{
             maxWidth: '1000px',
             width: '100%',
@@ -80,4 +80,4 @@ const AboutMySkills = ({ ...rest }) => {
   );
 };
 
-export default AboutMySkills;
+export default MySkills;

@@ -4,7 +4,7 @@ import ColorItem from './ColorItem';
 import { useEffect, useState } from 'react';
 
 const ColorSwitcher = () => {
-    const colors = ['#3ab773', '#4834d4', '#be2edd', '#f9ca24', '#ff0000', '#ff7b00'];
+    const colors = ['#3ab773', '#1F51FF', '#9D00FF', '#ffba08', '#FF3131', '#f95738'];
 
     const [state, setState] = useState(false);
     useEffect(() => {

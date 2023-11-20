@@ -84,6 +84,17 @@
       width: 0%
     }
 }
+#taglist ul li a {
+    font-size: 20px;
+    font-family: var(--body-font-family);
+}
+.tagcloud {
+    font-family: var(--body-font-family);
+    font-size: 20px;
+}
+.tagcloud--item:hover {
+    color: var(--hover-color);
+}
 .skillBox{
     height: 100%;
     display: flex;
@@ -126,4 +137,4 @@
 }
 .bar.expert::before{
     width: calc(100% - 10px);
-}  
+}

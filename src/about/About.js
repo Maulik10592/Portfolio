@@ -1,7 +1,6 @@
 import React from 'react';
 import './About.css';
 import {Container, Row, Col} from 'react-bootstrap';
-import AboutMySkills from './AboutMySkills';
 
 function About() {
 
@@ -19,7 +18,9 @@ function About() {
             <a rel="noreferrer" href={Maulik_CV} download={Maulik_CV} target='_blank' className="btn btnHover">Maulik CV</a>
           </Col>
           <Col md={{ span: 10, offset: 1 }} lg={{ span: 6, offset: 0 }} className="animated fadeInRight">
-            <AboutMySkills />
+            <div className='aboutMe'>
+              {/* <img src={process.env.PUBLIC_URL + "/assets/images/Maulik_web.jpeg"} alt="about me" /> */}
+            </div>
           </Col>
         </Row>
       </Container>

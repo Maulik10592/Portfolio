@@ -125,6 +125,9 @@
     box-shadow: 0 5px var(--hover-color);
     transform: translateY(4px);
 }
+.playBtn svg.fa-play{
+    margin-left: 2px;
+}
 .show{
     display: block !important;
 }

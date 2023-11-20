@@ -128,7 +128,7 @@ const Carousel = ({ slides, isPageBackground }) => {
 
   return (
     <section className="slidesWrapper">
-      <div className="slides">
+      <div className="slides" loading="lazy">
         <button className="prevSlideBtn" onClick={handlePrevSlide}>
             <FontAwesomeIcon icon={faChevronLeft} />
         </button>
