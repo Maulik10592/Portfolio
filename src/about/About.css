@@ -20,14 +20,14 @@
     background-position: 50% 25%;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 5px solid var(--hover-color);
+    border: 5px solid var(--heading-color);
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     height: 25rem;
     width: 22rem;
     transition: all 1s ease-in-out;
 }
 .aboutMe:hover {
-    box-shadow: 6px 15px 50px var(--hover-color), -4px -10px 40px var(--heading-color);
+    box-shadow: 6px 15px 50px var(--heading-color), -4px -10px 40px var(--heading-color);
 }
 @keyframes morph {
     0% {
