@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.1f66b218.css",
+    "main.css": "/static/css/main.1d7623a4.css",
     "main.js": "/static/js/main.afe872c1.js",
     "static/media/OCR-A-Regular.ttf": "/static/media/OCR-A-Regular.f8850ec2eec8bea3a6d2.ttf",
     "static/media/Maulik_web.jpeg": "/static/media/Maulik_web.d516c5f47583b403a418.jpeg",
     "index.html": "/index.html",
-    "main.1f66b218.css.map": "/static/css/main.1f66b218.css.map",
+    "main.1d7623a4.css.map": "/static/css/main.1d7623a4.css.map",
     "main.afe872c1.js.map": "/static/js/main.afe872c1.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f66b218.css",
+    "static/css/main.1d7623a4.css",
     "static/js/main.afe872c1.js"
   ]
 }

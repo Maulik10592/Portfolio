@@ -108,6 +108,11 @@ p{
     .Outerbox {
         height: 100%;
     }
+    .aboutMe{
+        margin: 30px auto !important;
+        height: 20rem !important;
+        width: 15rem !important;
+    }
 }
 @media only screen and (max-width: 767px) {
     :root {
@@ -140,7 +145,10 @@ p{
         margin: 0 0 50px 0 !important;
         height: 400px !important;
     }
-    .skillBox{margin: 0 0 60px 0 !important}
+    .skillBox{margin: 0 0 60px 0 !important}    
+    .aboutMe{
+        margin: 50px auto !important;
+    }
 }
 @media only screen and (max-width: 575px) {
     .Outerbox.homeOuterBox, .Outerbox.WorkSite{        
