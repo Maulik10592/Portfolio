@@ -124,3 +124,59 @@ textarea:-webkit-autofill:active {
     -webkit-background-clip: text !important;
     background-clip:  text !important;
 }
+.VisitingCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.flipx {
+	-webkit-perspective: 800;
+	width: 100%;
+    max-width: 600px;
+	height: 350px;
+	position: relative;
+    border: 2px solid var(--heading-color);
+    border-radius: 5px;
+    outline: 0;
+    box-shadow: 0 0 15px var(--heading-color);
+}
+.flipx .card {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: all .75s ease-in-out;;
+  transition: all .75s ease-in-out;
+  border: 0;
+}
+.flipx .card:hover {
+  -webkit-transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+}
+.flipx .card .face {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	-webkit-backface-visibility: hidden ;
+	z-index: 2;
+}
+.flipx .card .front {
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+.flipx .card .back {
+	-webkit-transform: rotateX(180deg);
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	-o-transform: rotateX(180deg);
+    cursor: pointer;
+}
+.flipx .card img{
+    width: 100%;
+    height: 100%;
+}
